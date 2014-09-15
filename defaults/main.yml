@@ -1,0 +1,17 @@
+---
+
+ansible_enabled: yes                # The role is enabled
+
+ansible_ppa: ppa:rquillo/ansible    # Launchpad PPA
+
+ansible_hosts: []                   # Setup ansible hosts
+                                    # List of strings (will be simple copied to ansible hosts)
+                                    # ansible_hosts:
+                                    #   - [group_name]
+                                    #   - host1 ansible_ssh_host=192.0.0.1
+                                    #   - host2 ansible_ssh_host=192.0.0.1
+
+ansible_vars: {}                    # Setup ansible vars (all group)
+                                    # ansible_vars:
+                                    #   ansible_ssh_user: root
+                                    #   environment: production

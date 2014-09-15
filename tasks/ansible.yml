@@ -1,0 +1,21 @@
+---
+
+- include: install.deb.yml
+  when: ansible_os_family == 'Debian'
+
+- name: Ensure the ansible directory is exists
+  file: path=/etc/ansible/group_vars state=directory owner=root group=root
+
+- name: Configure hosts
+  template:
+    src: hosts.j2
+    dest: /etc/ansible/hosts
+    owner: root
+    group: root
+
+- name: Configure vars
+  template:
+    src: all.j2
+    dest: /etc/ansible/group_vars/all.yml
+    owner: root
+    group: root
