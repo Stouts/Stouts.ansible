@@ -1,0 +1,49 @@
+Stouts.ansible
+==========
+
+[![Build Status](https://travis-ci.org/Stouts/Stouts.ansible.png)](https://travis-ci.org/Stouts/Stouts.ansible)
+
+An ansible role which installs and configures the Ansible.
+
+#### Variables
+
+```yaml
+ansible_enabled: yes                # The role is enabled
+
+ansible_ppa: ppa:rquillo/ansible    # Launchpad PPA
+
+ansible_hosts: []                   # Setup ansible hosts
+                                    # List of strings (will be simple copied to ansible hosts)
+                                    # ansible_hosts:
+                                    #   - [group_name]
+                                    #   - host1 ansible_ssh_host=192.0.0.1
+                                    #   - host2 ansible_ssh_host=192.0.0.1
+
+ansible_vars: {}                    # Setup ansible vars (all group)
+                                    # ansible_vars:
+                                    #   ansible_ssh_user: root
+                                    #   environment: production
+```
+
+
+#### Usage
+
+Add `Stouts.ansible` to your roles and set vars in your playbook file.
+
+Example:
+
+```yaml
+
+- hosts: all
+
+  roles:
+    - Stouts.ansible
+```
+
+#### License
+
+Licensed under the MIT License. See the LICENSE file for details.
+
+#### Feedback, bug-reports, requests, ...
+
+Are [welcome](https://github.com/Stouts/Stouts.ansible/issues)!

@@ -1,0 +1,10 @@
+---
+
+- name: Install python-pycurl
+  apt: pkg=python-pycurl
+
+- name: Add ansible apt repository
+  apt_repository: repo={{ansible_ppa}} update_cache=yes
+
+- name: Install ansible
+  apt: pkg=ansible state=present

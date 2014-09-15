@@ -1,0 +1,20 @@
+---
+
+- include: install.deb.yml
+  when: ansible_os_family == 'Debian'
+
+- name: Configure hosts
+  template:
+    src: hosts.j2
+    dest: /etc/ansible/hosts
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Configure vars
+  template:
+    src: all.j2
+    dest: /etc/ansible/group_vars/all.yml
+    owner: root
+    group: root
+    mode: 0644

@@ -1,0 +1,5 @@
+---
+
+- include: ansible.yml
+  when: ansible_enabled
+  tags: [ansible]
