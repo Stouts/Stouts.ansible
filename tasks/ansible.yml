@@ -6,10 +6,17 @@
 - name: Ensure the ansible directory is exists
   file: path=/etc/ansible/group_vars state=directory owner=root group=root
 
+- name: Configure ansible
+  template:
+    src: ansible.cfg.j2
+    dest: /etc/ansible/ansible.cfg
+    owner: root
+    group: root
+
 - name: Configure hosts
   template:
     src: hosts.j2
-    dest: /etc/ansible/hosts
+    dest: "{{ ansible_hostfile }}"
     owner: root
     group: root
 

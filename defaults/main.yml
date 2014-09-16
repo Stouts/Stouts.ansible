@@ -4,6 +4,16 @@ ansible_enabled: yes                # The role is enabled
 
 ansible_ppa: ppa:rquillo/ansible    # Launchpad PPA
 
+# Configure ansible (See Ansible documentation)
+ansible_display_skipped_hosts: true
+ansible_gathering: implicit
+ansible_host_key_checking: true
+ansible_hostfile: /etc/ansible/hosts # Set default hostfile
+ansible_library: /usr/share/ansible
+ansible_nocolor: false
+ansible_nocows: false
+ansible_sudo_user: root
+
 ansible_hosts: []                   # Setup ansible hosts
                                     # List of strings (will be simple copied to ansible hosts)
                                     # ansible_hosts:
