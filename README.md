@@ -2,6 +2,7 @@ Stouts.ansible
 ==========
 
 [![Build Status](https://travis-ci.org/Stouts/Stouts.ansible.png)](https://travis-ci.org/Stouts/Stouts.ansible)
+[![Stories in Ready](https://badge.waffle.io/Stouts/Stouts.ansible.svg?label=ready&title=Ready)](http://waffle.io/Stouts/Stouts.ansible)
 
 An ansible role which installs and configures the Ansible.
 
