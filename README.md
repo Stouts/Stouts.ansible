@@ -1,8 +1,9 @@
 Stouts.ansible
 ==========
 
-[![Build Status](https://travis-ci.org/Stouts/Stouts.ansible.png)](https://travis-ci.org/Stouts/Stouts.ansible)
-[![Stories in Ready](https://badge.waffle.io/Stouts/Stouts.ansible.svg?label=ready&title=Ready)](http://waffle.io/Stouts/Stouts.ansible)
+[![Build Status](http://img.shields.io/travis/Stouts/Stouts.ansible.svg?style=flat-square)](https://travis-ci.org/Stouts/Stouts.ansible)
+[![Galaxy](http://img.shields.io/badge/galaxy-Stouts.ansible-blue.svg?style=flat-square)](https://galaxy.ansible.com/list#/roles/1703)
+[![Tag](http://img.shields.io/github/tag/Stouts/Stouts.ansible.svg?style=flat-square)]()
 
 An ansible role which installs and configures the Ansible.
 
